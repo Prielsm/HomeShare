@@ -1,0 +1,84 @@
+18/03/2021 01:14:58	Ce journal contient des informations sur l'importation du schéma dans le projet 'HomeShare.DB' sur l'ordinateur 'DESKTOP-JE0D21M' par l'utilisateur 'User'.
+18/03/2021 01:14:58	L'importation du schéma de base de données a commencé.
+18/03/2021 01:15:06	Collecte des informations d'identification à la base de données
+18/03/2021 01:15:06	Collecte des options de la base de données
+18/03/2021 01:15:06	Collecte des utilisateurs
+18/03/2021 01:15:06	Collecte des rôles
+18/03/2021 01:15:06	Collecte des rôles d'application
+18/03/2021 01:15:06	Collecte des appartenances aux rôles
+18/03/2021 01:15:06	Collecte des groupes de fichiers
+18/03/2021 01:15:06	Collecte des catalogues de recherche en texte intégral
+18/03/2021 01:15:06	Collecte des assemblys
+18/03/2021 01:15:06	Collecte des certificats
+18/03/2021 01:15:06	Collecte des clés asymétriques
+18/03/2021 01:15:06	Collecte des clés symétriques
+18/03/2021 01:15:06	Collecte des clés symétriques chiffrées
+18/03/2021 01:15:06	Collecte des schémas
+18/03/2021 01:15:06	Collecte des collections de schémas XML
+18/03/2021 01:15:06	Collecte des types de données définis par l'utilisateur
+18/03/2021 01:15:06	Collecte des types définis par l'utilisateur
+18/03/2021 01:15:06	Collecte des types de tables
+18/03/2021 01:15:06	Collecte des clés uniques des types de tables
+18/03/2021 01:15:06	Collecte des clés primaires pour les types de tables
+18/03/2021 01:15:06	Collecte d'index pour types de tables
+18/03/2021 01:15:06	Collecte des contraintes de validation pour les types de tables
+18/03/2021 01:15:06	Collecte des contraintes par défaut pour les types de tables
+18/03/2021 01:15:06	Collecte des fonctions de partition
+18/03/2021 01:15:06	Collecte des schémas de partition
+18/03/2021 01:15:07	Collecte des fonctions
+18/03/2021 01:15:07	Collecte de fonctions cryptées
+18/03/2021 01:15:07	Collecte des agrégats
+18/03/2021 01:15:07	Collecte des procédures
+18/03/2021 01:15:07	Collecte de procédures cryptées
+18/03/2021 01:15:07	Collecte des tables
+18/03/2021 01:15:08	Collecte des clés primaires
+18/03/2021 01:15:08	Collecte des contraintes uniques
+18/03/2021 01:15:08	Collecte des clés étrangères
+18/03/2021 01:15:08	Collecte des contraintes par défaut
+18/03/2021 01:15:08	Collecte des contraintes de validation
+18/03/2021 01:15:08	Collecte des vues
+18/03/2021 01:15:08	Collecte de vues cryptées
+18/03/2021 01:15:08	Collecte des index
+18/03/2021 01:15:08	Collecte des statistiques
+18/03/2021 01:15:08	Collecte des listes de mots vides d'index de recherche en texte intégral
+18/03/2021 01:15:08	Collecte des listes de propriétés de recherche
+18/03/2021 01:15:08	Collecte des propriétés de recherche
+18/03/2021 01:15:08	Collecte des index de recherche en texte intégral
+18/03/2021 01:15:08	Collecte des index de la banque de colonnes
+18/03/2021 01:15:08	Collecte des index spatiaux
+18/03/2021 01:15:08	Collecte des index XML
+18/03/2021 01:15:08	Collecte d'index XML sélectifs
+18/03/2021 01:15:09	Collecte de déclencheurs cryptés
+18/03/2021 01:15:09	Collecte des déclencheurs
+18/03/2021 01:15:09	Collecte des déclencheurs chiffrés et DDL CLR
+18/03/2021 01:15:09	Collecte des DDL triggers
+18/03/2021 01:15:09	Collecte des synonymes
+18/03/2021 01:15:09	Collecte des valeurs par défaut
+18/03/2021 01:15:09	Collecte des liaisons UDDT de contrainte de données
+18/03/2021 01:15:09	Collecte des règles
+18/03/2021 01:15:09	Collecte des liaisons UDDT de contrainte de données
+18/03/2021 01:15:09	Collecte des types de messages
+18/03/2021 01:15:09	Collecte des files d'attente
+18/03/2021 01:15:09	Collecte des contrats
+18/03/2021 01:15:09	Collecte des services
+18/03/2021 01:15:09	Collecte des notifications d'événements
+18/03/2021 01:15:09	Collecte des liaisons de service distant
+18/03/2021 01:15:09	Collecte des priorités de Service Broker
+18/03/2021 01:15:09	Collecte des signatures
+18/03/2021 01:15:09	Collection des options de compression de données
+18/03/2021 01:15:09	Collecte des types de séquences
+18/03/2021 01:15:09	Collecte des stratégies de sécurité
+18/03/2021 01:15:09	Collecter les clés de chiffrement de colonne
+18/03/2021 01:15:09	Collecte des clés principales de colonne
+18/03/2021 01:15:09	Collecte des sources de données externes
+18/03/2021 01:15:09	Collecte des formats de fichier externes
+18/03/2021 01:15:09	Collecte des tables externes
+18/03/2021 01:15:09	Collection des propriétés étendues
+18/03/2021 01:15:10	Collecte des informations d'identification
+18/03/2021 01:15:10	Collecte des connexions
+18/03/2021 01:15:10	Collecte des audits du serveur
+18/03/2021 01:15:10	Analyse du projet à la recherche des éléments en double
+18/03/2021 01:15:10	Fin du traitement des éléments en double
+18/03/2021 01:15:11	Importation de la base de données terminée.
+18/03/2021 01:15:11	Un résumé de l'opération d'importation a été enregistré à l'emplacement suivant : C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\Importer les journaux de schémas\HomeShare.DB_20210318121458.log.
+18/03/2021 01:15:11	Cliquez sur Terminer pour continuer...

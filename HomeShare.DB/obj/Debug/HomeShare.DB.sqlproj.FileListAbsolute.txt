@@ -1,0 +1,10 @@
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\bin\Debug\HomeShare.DB.dacpac
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\bin\Debug\HomeShare.DB.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\bin\Debug\HomeShare.DB.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\HomeShare.DB.sqlprojAssemblyReference.cache
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\Model.xml
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\refactor.xml
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\postdeploy.sql
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\predeploy.sql
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\HomeShare.DB.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.DB\obj\Debug\HomeShare.DB.pdb

@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Option]
+(
+	[IdOption] INT NOT NULL PRIMARY KEY IDENTITY(1,1),
+	[Nom] NVARCHAR(255) UNIQUE NOT NULL, 
+    [EstDisponible] BIT NOT NULL,
+)
