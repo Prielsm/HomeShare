@@ -1,0 +1,5 @@
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Entities\bin\Debug\HomeShare.Entities.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Entities\bin\Debug\HomeShare.Entities.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.csprojAssemblyReference.cache
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Entities\obj\Debug\HomeShare.Entities.pdb

@@ -1,0 +1,14 @@
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Repositories.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Repositories.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.DAL.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Entities.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Models.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\Tools.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.DAL.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Entities.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\HomeShare.Models.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\bin\Debug\Tools.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.csprojAssemblyReference.cache
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.csproj.CopyComplete
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Repositories\obj\Debug\HomeShare.Repositories.pdb

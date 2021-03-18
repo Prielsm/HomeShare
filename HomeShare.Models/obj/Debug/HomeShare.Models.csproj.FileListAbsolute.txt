@@ -1,0 +1,5 @@
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Models\bin\Debug\HomeShare.Models.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Models\bin\Debug\HomeShare.Models.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Models\obj\Debug\HomeShare.Models.csprojAssemblyReference.cache
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Models\obj\Debug\HomeShare.Models.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare.Models\obj\Debug\HomeShare.Models.pdb

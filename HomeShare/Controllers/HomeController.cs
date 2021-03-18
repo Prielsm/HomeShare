@@ -10,12 +10,25 @@ namespace HomeShare.Controllers
     {
         public ActionResult Index()
         {
+            ViewBag.Index = "active";
+
             return View();
+
         }
 
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";
+            ViewBag.About = "active";
+
+
+            return View();
+        }
+
+        public ActionResult Membres()
+        {
+            ViewBag.Message = "Your application description page.";
+            ViewBag.Membres = "active";
 
             return View();
         }
@@ -23,6 +36,7 @@ namespace HomeShare.Controllers
         public ActionResult Contact()
         {
             ViewBag.Message = "Your contact page.";
+            ViewBag.Contact = "active";
 
             return View();
         }

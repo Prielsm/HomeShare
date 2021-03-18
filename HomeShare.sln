@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeShare.Models", "HomeSha
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HomeShare.Repositories", "HomeShare.Repositories\HomeShare.Repositories.csproj", "{F6191952-2B68-411E-805E-8D83D21EB865}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tools", "Tools\Tools.csproj", "{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -47,6 +49,10 @@ Global
 		{F6191952-2B68-411E-805E-8D83D21EB865}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F6191952-2B68-411E-805E-8D83D21EB865}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F6191952-2B68-411E-805E-8D83D21EB865}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

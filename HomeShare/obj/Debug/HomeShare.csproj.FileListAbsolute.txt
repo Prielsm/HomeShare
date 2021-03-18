@@ -83,3 +83,13 @@ C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\obj\Debug\Ho
 C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\obj\Debug\HomeShare.csproj.CopyComplete
 C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\obj\Debug\HomeShare.dll
 C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\obj\Debug\HomeShare.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Models.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Repositories.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.DAL.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Entities.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\Tools.dll
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Models.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Repositories.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.DAL.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\HomeShare.Entities.pdb
+C:\xampp\htdocs\Cours\asp.net\Projet\Projet ASP\HomeShare\HomeShare\bin\Tools.pdb

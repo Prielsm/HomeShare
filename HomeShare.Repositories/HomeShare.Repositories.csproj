@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BienEchangeRepository.cs" />
+    <Compile Include="MembreRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UnitOfWork.cs" />
   </ItemGroup>
@@ -53,6 +54,14 @@
     <ProjectReference Include="..\HomeShare.Entities\HomeShare.Entities.csproj">
       <Project>{9451D6EE-2723-47F4-B1D9-560E3FB2B3E0}</Project>
       <Name>HomeShare.Entities</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeShare.Models\HomeShare.Models.csproj">
+      <Project>{F377E6B5-7771-419A-9D08-03B08CF04CAF}</Project>
+      <Name>HomeShare.Models</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Tools\Tools.csproj">
+      <Project>{CD2120BA-5D4D-487A-92A5-827FCCF9C0CD}</Project>
+      <Name>Tools</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

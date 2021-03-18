@@ -17,7 +17,7 @@ namespace HomeShare
                 name: "Default",
                 url: "{controller}/{action}/{id}",
                 defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional },
-                namespaces: new string[] { "NetFlask.Controllers" }
+                namespaces: new string[] { "HomeShare.Controllers" }
 
             );
         }
