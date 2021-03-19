@@ -13,14 +13,16 @@ namespace HomeShare.Repositories
     public class UnitOfWork
     {
         IConcreteRepository<MembreEntity> _membreRepo;
+        IConcreteRepository<BienEntity> _bienRepo;
         public UnitOfWork(string connectionString)
         {
             _membreRepo = new MembreRepository(connectionString);
+            _bienRepo = new BienRepository(connectionString);
         }
         #region Account
         public bool CreateMembre(MembreModel um)
         {
-            MembreEntity userEntity = new MembreEntity()
+            MembreEntity membreEntity = new MembreEntity()
             {
                 Nom = um.Nom,
                 Prenom = um.Prenom,
@@ -31,7 +33,28 @@ namespace HomeShare.Repositories
                 Password = um.Password
             };
 
-            return _membreRepo.Insert(userEntity);
+            return _membreRepo.Insert(membreEntity);
+        }
+
+        public bool InsertBienMembre(BienInsertModel bm)
+        {
+            BienEntity bienEntity = new BienEntity()
+            {
+                Titre = bm.Titre,
+                NombrePerson = bm.NombrePerson,
+                Pays = bm.Pays,
+                IdMembre = bm.IdMembre,
+                DescCourte = bm.DescCourte,
+                DescLong = bm.DescLong,
+                Ville = bm.Ville,
+                Rue = bm.Rue,
+                Numero = bm.Numero,
+                CodePostal = bm.CodePostal,
+                Photo = bm.Photo
+            };
+            return _bienRepo.Insert(bienEntity);
+
+
         }
 
         public bool UpdateProfil(MembreModel mm)

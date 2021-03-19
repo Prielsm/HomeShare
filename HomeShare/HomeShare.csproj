@@ -122,7 +122,9 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Biens\BiensAreaRegistration.cs" />
     <Compile Include="Areas\Biens\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Biens\Models\TousBiensViewModel.cs" />
     <Compile Include="Areas\Profil\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Profil\Models\AjoutBienViewModel.cs" />
     <Compile Include="Areas\Profil\ProfilAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
@@ -204,7 +206,7 @@
     <Content Include="Areas\Biens\Views\web.config" />
     <Content Include="Areas\Profil\Views\web.config" />
     <Content Include="Areas\Profil\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Profil\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Profil\Views\Shared\defaultView.cshtml" />
     <Content Include="Areas\Profil\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Profil\Views\Shared\_profilMembre.cshtml" />
     <Content Include="Areas\Profil\Views\Home\Edit.cshtml" />
@@ -212,6 +214,8 @@
     <Content Include="Areas\Biens\Views\Shared\_Layout.cshtml" />
     <Content Include="Areas\Biens\Views\Home\Index.cshtml" />
     <Content Include="Areas\Biens\Views\Home\Recherche.cshtml" />
+    <Content Include="Areas\Profil\Views\Home\AjoutBien.cshtml" />
+    <Content Include="Areas\Profil\Views\Shared\_insertBienMembre.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />

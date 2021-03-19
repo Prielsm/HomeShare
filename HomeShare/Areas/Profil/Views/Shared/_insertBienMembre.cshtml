@@ -1,0 +1,107 @@
+﻿@model HomeShare.Models.BienInsertModel
+
+
+    <form action="~/Profil/Home/AjoutBien" method="post">
+        @Html.AntiForgeryToken()
+
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.Titre, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Titre, "", new { @class = "text-danger" })
+                <input type="text" class="form-control" placeholder="Titre" name="Titre">
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Description courte</label>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.DescCourte, "", new { @class = "text-danger" })
+                <textarea rows="4" class="form-control" placeholder="Description courte" name="DescCourte"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Description</label>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.DescLong, "", new { @class = "text-danger" })
+                <textarea rows="7" class="form-control" placeholder="Description longue" name="DescLong"></textarea>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Pays</label>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Pays, "", new { @class = "text-danger" })
+                <select class="form-select form-control" name="Pays">
+                    <option selected>Sélectionnez votre pays</option>
+                    <option value="1">Belgique</option>
+                    <option value="2">France</option>
+                    <option value="3">Italie</option>
+                    <option value="4">Pays-Bas</option>
+                    <option value="5">Luxembourg</option>
+                    <option value="6">Australie</option>
+                    <option value="7">USA</option>
+                    <option value="8">Angleterre</option>
+                    <option value="9">Espagne</option>
+                    <option value="10">Portugal</option>
+                    <option value="11">Islande</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Ville/Code Postal</label>
+            <div class="col-md-10">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        @Html.ValidationMessageFor(model => model.Ville, "", new { @class = "text-danger" })
+                        <input type="text" class="form-control" placeholder="Ville" name="Ville">
+                    </div>
+                    <div class="form-group col-md-6">
+                        @Html.ValidationMessageFor(model => model.CodePostal, "", new { @class = "text-danger" })
+                        <input type="text" class="form-control" placeholder="CodePostal" name="CodePostal">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Numéro/Rue</label>
+            <div class="col-md-10">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        @Html.ValidationMessageFor(model => model.Numero, "", new { @class = "text-danger" })
+                        <input type="text" class="form-control" placeholder="Numero" name="Numero">
+                    </div>
+                    <div class="form-group col-md-6">
+                        @Html.ValidationMessageFor(model => model.Rue, "", new { @class = "text-danger" })
+                        <input type="text" class="form-control" placeholder="Rue" name="Rue">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label class="control-label col-md-2">Photo</label>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.Photo, "", new { @class = "text-danger" })
+                <input type="text" class="form-control" placeholder="Url photo" name="Photo">
+            </div>
+        </div>
+        <div class="form-group">
+            <label class="control-label col-md-2">Capacité</label>
+            <div class="col-md-10">
+                @Html.ValidationMessageFor(model => model.NombrePerson, "", new { @class = "text-danger" })
+                <input type="text" class="form-control" placeholder="Nombre de personnes" name="NombrePerson">
+            </div>
+        </div>
+
+        
+
+
+        <input type="submit" value="Enregistrer" class="btn btn-success" />
+
+
+    </form>

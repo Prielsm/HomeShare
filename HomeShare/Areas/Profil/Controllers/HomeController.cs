@@ -1,4 +1,5 @@
-﻿using HomeShare.Infra;
+﻿using HomeShare.Areas.Profil.Models;
+using HomeShare.Infra;
 using HomeShare.Models;
 using HomeShare.Repositories;
 using System;
@@ -12,6 +13,8 @@ namespace HomeShare.Areas.Profil.Controllers
 {
     public class HomeController : Controller
     {
+        UnitOfWork uof = new UnitOfWork(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
+
         // GET: Profil/Home
         public ActionResult Index()
         {
@@ -39,7 +42,7 @@ namespace HomeShare.Areas.Profil.Controllers
             if (ModelState.IsValid)
             {
                 UnitOfWork uof = new UnitOfWork(ConfigurationManager.ConnectionStrings["Cnstr"].ConnectionString);
-                if (uof.UpdateProfil(mm))
+                if (uof.CreateMembre(mm))
                 {
                     ViewBag.SuccessMessage = "Message bien envoyé";
                     return RedirectToAction("Index", "Home", new { area = "Profil" });
@@ -55,6 +58,53 @@ namespace HomeShare.Areas.Profil.Controllers
                 ViewBag.ErrorMessage = "Formulaire error";
                 return View(am);
             }
+        }
+
+        public ActionResult MesBiens()
+        {
+            MembreModel mm = SessionUtils.ConnectedUser;
+
+            return View(mm);
+        }
+
+        [HttpGet]
+        public ActionResult AjoutBien()
+        {
+            AjoutBienViewModel ajoutBienViewModel = new AjoutBienViewModel();
+            ajoutBienViewModel.MembreModel = SessionUtils.ConnectedUser;
+            return View(ajoutBienViewModel);
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public ActionResult AjoutBien(BienInsertModel bienInsertModel)
+        {
+            AjoutBienViewModel ajoutBienViewModel = new AjoutBienViewModel();
+            ajoutBienViewModel.MembreModel = SessionUtils.ConnectedUser;
+
+            bienInsertModel.IdMembre = SessionUtils.ConnectedUser.IdMembre;
+            if (ModelState.IsValid)
+            {
+                if (uof.InsertBienMembre(bienInsertModel))
+                {
+                    return RedirectToAction("Index", "Home", new { area = "Profil" });
+                }
+                else
+                {
+                    ViewBag.Error = "Erreur Login/Password";
+                    return View(ajoutBienViewModel);
+                }
+            }
+            else
+            {
+                return View(ajoutBienViewModel);
+            }
+        }
+        public ActionResult DemandesEchange()
+        {
+            MembreModel mm = SessionUtils.ConnectedUser;
+
+            return View(mm);
         }
     }
 }

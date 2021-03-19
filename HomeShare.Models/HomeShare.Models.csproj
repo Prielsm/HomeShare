@@ -42,8 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BienInsertModel.cs" />
     <Compile Include="LoginModel.cs" />
     <Compile Include="MembreModel.cs" />
+    <Compile Include="OptionsBienModel.cs" />
+    <Compile Include="OptionsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

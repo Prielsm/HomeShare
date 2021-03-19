@@ -1,0 +1,22 @@
+﻿** Met en surbrillance
+     Tables à reconstruire
+       Aucun
+     Index ordonnés en clusters à supprimer
+       Aucun
+     Index ordonnés en clusters à créer.
+       Aucun
+     Problèmes de données possibles
+       Aucun
+
+** Actions de l'utilisateur
+     Modifier
+       [dbo].[BienEchange] (Table)
+
+** Actions de support
+     Actualiser
+       [dbo].[Vue_BiensParPays] (Vue)
+       [dbo].[Vue_CinqDernierBiens] (Vue)
+       [dbo].[Vue_MeilleursAvis] (Vue)
+       [dbo].[sp_RecupBienDispo] (Procédure)
+       [dbo].[sp_RecupBienMembre] (Procédure)
+       [dbo].[sp_RecupToutesInfosBien] (Procédure)
