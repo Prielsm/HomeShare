@@ -121,6 +121,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Biens\BiensAreaRegistration.cs" />
+    <Compile Include="Areas\Biens\Controllers\HomeController.cs" />
     <Compile Include="Areas\Profil\Controllers\HomeController.cs" />
     <Compile Include="Areas\Profil\ProfilAreaRegistration.cs" />
     <Compile Include="Controllers\AccountController.cs" />
@@ -143,6 +144,7 @@
     <Content Include="Content\OwlCarousel\owl.transitions.css" />
     <Content Include="Content\Site.css" />
     <Content Include="css\custom-slitslider.css" />
+    <Content Include="css\profil.css" />
     <Content Include="css\style-slitslider.css" />
     <Content Include="css\style.css" />
     <Content Include="favicon.ico" />
@@ -202,6 +204,14 @@
     <Content Include="Areas\Biens\Views\web.config" />
     <Content Include="Areas\Profil\Views\web.config" />
     <Content Include="Areas\Profil\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Profil\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Profil\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Profil\Views\Shared\_profilMembre.cshtml" />
+    <Content Include="Areas\Profil\Views\Home\Edit.cshtml" />
+    <Content Include="Areas\Biens\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Biens\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Biens\Views\Home\Index.cshtml" />
+    <Content Include="Areas\Biens\Views\Home\Recherche.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -236,15 +246,14 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Account\LoginRegister.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Home\Membres.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Areas\Biens\Controllers\" />
     <Folder Include="Areas\Biens\Data\" />
-    <Folder Include="Areas\Biens\Views\Shared\" />
     <Folder Include="Areas\Profil\Data\" />
-    <Folder Include="Areas\Profil\Views\Shared\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

@@ -54,13 +54,13 @@
                         @if (HomeShare.Infra.SessionUtils.IsLogged)
                         {
                             @:<li>
-                                @:<button class="btn btn-info ml-5" style="margin-left: 100px;margin-top:10px;" href="~/Account/Logout">Se Déconnecter</button>
+                                @:<a href="/Account/Logout"><button class="btn btn-info ml-5" style="margin-left: 100px;">Se Déconnecter</button></a>
                             @:</li>
                         }
                         else
                         {
                             @:<li>
-                                @:<button class="btn btn-info ml-5" style="margin-left: 100px;margin-top:10px;" href="~/Account/Login">Se Connecter</button>
+                                @:<a href="/Account/Login"><button class="btn btn-info ml-5" style="margin-left: 100px;">Se Connecter</button></a>
                             @:</li>
                         }
                         @*<button class="btn btn-info ml-5" style="margin-left: 100px;margin-top:10px;" data-toggle="modal" data-target="#loginpop">Login</button>*@
@@ -85,8 +85,8 @@
             <a href="index.php"><img src="/images/logo.png" alt="Realestate"></a>
 
             <ul class="pull-right">
-                <li><a href="buysalerent.php">Tous les biens en échange</a></li>
-                <li><a href="buysalerent.php">Recherche</a></li>
+                <li><a href="/Biens/Home/Index">Tous les biens en échange</a></li>
+                <li><a href="/Biens/Home/Recherche">Recherche</a></li>
                 <li><a href="/Profil/Home/Index">Mes biens</a></li>
             </ul>
         </div>

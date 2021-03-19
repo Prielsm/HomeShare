@@ -34,6 +34,21 @@ namespace HomeShare.Repositories
             return _membreRepo.Insert(userEntity);
         }
 
+        public bool UpdateProfil(MembreModel mm)
+        {
+            MembreEntity me = new MembreEntity()
+            {
+                IdMembre = mm.IdMembre,
+                Nom = mm.Nom,
+                Prenom = mm.Prenom,
+                Email = mm.Email,
+                Pays = mm.Pays,
+                Telephone = mm.Telephone,
+                Login = mm.Login,
+            };
+            return _membreRepo.Update(me);
+        }
+
         public MembreModel UserAuth(LoginModel lm)
         {
             MembreEntity ue = ((MembreRepository)_membreRepo).GetFromLogin(lm.Login);
@@ -43,6 +58,7 @@ namespace HomeShare.Repositories
             {
                 return new MembreModel()
                 {
+                    IdMembre = ue.IdMembre,
                     Nom = ue.Nom,
                     Prenom = ue.Prenom,
                     Email = ue.Email,

@@ -49,7 +49,7 @@ namespace HomeShare.Controllers
                     SessionUtils.IsLogged = true;
                     SessionUtils.ConnectedUser = um;
 
-                    return RedirectToAction("Index", "Home", new { area = "Membre" });
+                    return RedirectToAction("Index", "Home", new { area = "Profil" });
                 }
             }
             else
@@ -74,7 +74,7 @@ namespace HomeShare.Controllers
                 {
                     SessionUtils.IsLogged = true;
                     SessionUtils.ConnectedUser = um;
-                    return RedirectToAction("Index", "Home", new { area = "Membre" });
+                    return RedirectToAction("Index", "Home", new { area = "Profil" });
                 }
                 else
                 {
@@ -84,7 +84,6 @@ namespace HomeShare.Controllers
             }
             else
             {
-                ViewBag.Error = "Erreur Login/Password";
                 return View(um);
             }
         }

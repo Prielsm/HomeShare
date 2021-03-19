@@ -45,7 +45,15 @@ namespace HomeShare.Repositories
 
         public bool Update(MembreEntity toUpdate)
         {
-            throw new NotImplementedException();
+            string requete = @"UPDATE [dbo].[Membre]
+                                   SET [Nom] = @Nom
+                                      ,[Prenom] = @Prenom
+                                      ,[Email] = @Email
+                                      ,[Pays] = @Pays
+                                      ,[Telephone] = @Telephone
+                                      ,[Login] = @Login
+                                 WHERE IdMembre=@IdMembre";
+            return base.Update(toUpdate, requete);
         }
 
         public MembreEntity GetFromLogin(string login)

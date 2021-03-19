@@ -7,6 +7,7 @@
     [Telephone] NVARCHAR (20)  NOT NULL,
     [Login]     NVARCHAR (50)  NOT NULL,
     [Password]  NVARCHAR (256) NOT NULL,
+    [Salt] NVARCHAR(250) NULL, 
     CONSTRAINT [PK_membre] PRIMARY KEY CLUSTERED ([idMembre] ASC)
 );
 

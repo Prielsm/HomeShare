@@ -1,0 +1,53 @@
+﻿@model HomeShare.Models.LoginModel
+
+@{
+    ViewBag.Title = "Login";
+}
+
+<!-- banner -->
+<div class="inside-banner">
+    <div class="container">
+        <span class="pull-right"><a href="~/Home/Index">Home</a> / Compte / Se connecter</span>
+        <h2>Connexion</h2>
+    </div>
+</div>
+<!-- banner -->
+
+<div class="modal-dialog">
+    <div class="modal-content">
+        <div class="row">
+            <div class="col-sm-6 login">
+                <form action="/Account/Login" method="post">
+                    @Html.AntiForgeryToken()
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputEmail2">Login</label>
+                        @Html.ValidationMessageFor(model => model.Login, "", new { @class = "text-danger" })
+                        <input type="text" name="Login" class="form-control" id="exampleInputEmail2" placeholder="Entrer le login">
+                    </div>
+                    <div class="form-group">
+                        <label class="sr-only" for="exampleInputPassword2">Password</label>
+                        @Html.ValidationMessageFor(model => model.Password, "", new { @class = "text-danger" })
+                        <input type="password" name="Password" class="form-control" id="exampleInputPassword2" placeholder="Mot de passe">
+                    </div>
+                    <div class="checkbox">
+                        <label>
+                            <input type="checkbox"> Se souvenir de moi
+                        </label>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="btn" value="Connectez-vous" class="btn btn-success">
+
+                        @ViewBag.Error
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-6">
+                <h4>S'enregistrer en tant que nouveau membre</h4>
+                <p>Rejoignez aujourd'hui HomeShare et échangez avec des gens du monde entier!</p>
+                <a href="~/Account/Register"><button type="submit" class="btn btn-success">S'inscrire maintenant</button></a>
+            </div>
+
+        </div>
+    </div>
+</div>
+

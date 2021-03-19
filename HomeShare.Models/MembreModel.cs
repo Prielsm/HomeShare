@@ -69,6 +69,7 @@ namespace HomeShare.Models
             }
         }
 
+        [Required]
         [EmailAddress]
         [DataType(DataType.EmailAddress)]
         public string Email
@@ -84,6 +85,7 @@ namespace HomeShare.Models
             }
         }
 
+        [Required]
         public string Telephone
         {
             get
@@ -112,7 +114,6 @@ namespace HomeShare.Models
             }
         }
 
-        [Required]
         [MaxLength(256)]
         public string Password
         {
@@ -127,7 +128,6 @@ namespace HomeShare.Models
             }
         }
 
-        [Required]
         [MaxLength(256)]
         [Compare("Password", ErrorMessage = "No Matching Password")]
         public string ConfirmPassword
