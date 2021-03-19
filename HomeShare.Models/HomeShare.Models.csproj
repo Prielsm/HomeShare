@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BienInsertModel.cs" />
+    <Compile Include="BienModel.cs" />
     <Compile Include="LoginModel.cs" />
     <Compile Include="MembreModel.cs" />
     <Compile Include="OptionsBienModel.cs" />

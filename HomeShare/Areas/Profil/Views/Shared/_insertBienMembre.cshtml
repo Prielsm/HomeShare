@@ -94,7 +94,7 @@
             <label class="control-label col-md-2">Capacité</label>
             <div class="col-md-10">
                 @Html.ValidationMessageFor(model => model.NombrePerson, "", new { @class = "text-danger" })
-                <input type="text" class="form-control" placeholder="Nombre de personnes" name="NombrePerson">
+                <input type="number" class="form-control" placeholder="Nombre de personnes" name="NombrePerson">
             </div>
         </div>
 

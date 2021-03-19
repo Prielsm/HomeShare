@@ -122,6 +122,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Areas\Biens\BiensAreaRegistration.cs" />
     <Compile Include="Areas\Biens\Controllers\HomeController.cs" />
+    <Compile Include="Areas\Biens\Models\FicheViewModel.cs" />
     <Compile Include="Areas\Biens\Models\TousBiensViewModel.cs" />
     <Compile Include="Areas\Profil\Controllers\HomeController.cs" />
     <Compile Include="Areas\Profil\Models\AjoutBienViewModel.cs" />
@@ -132,6 +133,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Infra\SessionUtils.cs" />
+    <Compile Include="Models\HomeViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -216,6 +218,8 @@
     <Content Include="Areas\Biens\Views\Home\Recherche.cshtml" />
     <Content Include="Areas\Profil\Views\Home\AjoutBien.cshtml" />
     <Content Include="Areas\Profil\Views\Shared\_insertBienMembre.cshtml" />
+    <Content Include="Areas\Biens\Views\Home\Fiche.cshtml" />
+    <Content Include="Areas\Biens\Views\Home\Echanger.cshtml" />
     <None Include="Scripts\jquery-1.9.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.9.1.js" />
     <Content Include="Scripts\jquery-1.9.1.min.js" />
@@ -258,7 +262,6 @@
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Biens\Data\" />
     <Folder Include="Areas\Profil\Data\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

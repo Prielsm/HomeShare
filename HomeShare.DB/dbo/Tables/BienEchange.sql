@@ -9,7 +9,7 @@
     [Rue]                  NVARCHAR (50)  NOT NULL,
     [Numero]               NVARCHAR (5)   NOT NULL,
     [CodePostal]           NVARCHAR (50)  NOT NULL,
-    [Photo]                NVARCHAR (50)  NOT NULL,
+    [Photo]                NVARCHAR (MAX)  NOT NULL,
     [AssuranceObligatoire] BIT            CONSTRAINT [DF_BienEchange_AssuranceObligatoire] DEFAULT ((0)) NOT NULL,
     [isEnabled]            BIT            CONSTRAINT [DF_BienEchange_isEnabled] DEFAULT ((0)) NOT NULL,
     [DisabledDate]         DATE           NULL,

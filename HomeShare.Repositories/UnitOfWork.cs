@@ -19,7 +19,7 @@ namespace HomeShare.Repositories
             _membreRepo = new MembreRepository(connectionString);
             _bienRepo = new BienRepository(connectionString);
         }
-        #region Account
+        #region CreateMembre
         public bool CreateMembre(MembreModel um)
         {
             MembreEntity membreEntity = new MembreEntity()
@@ -35,7 +35,9 @@ namespace HomeShare.Repositories
 
             return _membreRepo.Insert(membreEntity);
         }
+        #endregion
 
+        #region InsertBienMembre
         public bool InsertBienMembre(BienInsertModel bm)
         {
             BienEntity bienEntity = new BienEntity()
@@ -56,7 +58,9 @@ namespace HomeShare.Repositories
 
 
         }
+        #endregion
 
+        #region UpdateProfil
         public bool UpdateProfil(MembreModel mm)
         {
             MembreEntity me = new MembreEntity()
@@ -71,7 +75,9 @@ namespace HomeShare.Repositories
             };
             return _membreRepo.Update(me);
         }
+        #endregion
 
+        #region UserAuth
         public MembreModel UserAuth(LoginModel lm)
         {
             MembreEntity ue = ((MembreRepository)_membreRepo).GetFromLogin(lm.Login);
@@ -94,7 +100,94 @@ namespace HomeShare.Repositories
             {
                 return null;
             }
+        } 
+        #endregion
+
+        public List<BienModel> GetAllBiens()
+        {
+            List<BienModel> bienModels = new List<BienModel>();
+            List<BienEntity> bienEntities = _bienRepo.Get();
+
+            foreach (BienEntity bienEntity in bienEntities)
+            {
+                BienModel bienModel = new BienModel()
+                {
+                    IdBien = bienEntity.IdBien,
+                    AssuranceObligatoire = bienEntity.AssuranceObligatoire,
+                    Titre = bienEntity.Titre,
+                    NombrePerson = bienEntity.NombrePerson,
+                    Pays = bienEntity.Pays,
+                    IdMembre = bienEntity.IdMembre,
+                    DescCourte = bienEntity.DescCourte,
+                    DescLong = bienEntity.DescLong,
+                    Ville = bienEntity.Ville,
+                    Rue = bienEntity.Rue,
+                    Numero = bienEntity.Numero,
+                    CodePostal = bienEntity.CodePostal,
+                    Photo = bienEntity.Photo,
+                    IsEnabled = bienEntity.IsEnabled,
+                    DisabledDate = bienEntity.DisabledDate,
+                };
+                bienModels.Add(bienModel);
+            }
+
+            return bienModels;
         }
-        #endregion Account
+
+        public BienModel GetBienById(int idBien)
+        {
+            BienEntity bienEntity = _bienRepo.GetOne(idBien);
+            BienModel bienModel = new BienModel()
+            {
+                IdBien = bienEntity.IdBien,
+                AssuranceObligatoire = bienEntity.AssuranceObligatoire,
+                Titre = bienEntity.Titre,
+                NombrePerson = bienEntity.NombrePerson,
+                Pays = bienEntity.Pays,
+                IdMembre = bienEntity.IdMembre,
+                DescCourte = bienEntity.DescCourte,
+                DescLong = bienEntity.DescLong,
+                Ville = bienEntity.Ville,
+                Rue = bienEntity.Rue,
+                Numero = bienEntity.Numero,
+                CodePostal = bienEntity.CodePostal,
+                Photo = bienEntity.Photo,
+                IsEnabled = bienEntity.IsEnabled,
+                DisabledDate = bienEntity.DisabledDate,
+            };
+
+            return bienModel;
+        }
+
+        public List<BienModel> Get5DerniersBiens()
+        {
+            List<BienModel> bienModels = new List<BienModel>();
+            List<BienEntity> bienEntities = ((BienRepository)_bienRepo).GetDerniersBiens();
+
+            foreach (BienEntity bienEntity in bienEntities)
+            {
+                BienModel bienModel = new BienModel()
+                {
+                    IdBien = bienEntity.IdBien,
+                    AssuranceObligatoire = bienEntity.AssuranceObligatoire,
+                    Titre = bienEntity.Titre,
+                    NombrePerson = bienEntity.NombrePerson,
+                    Pays = bienEntity.Pays,
+                    IdMembre = bienEntity.IdMembre,
+                    DescCourte = bienEntity.DescCourte,
+                    DescLong = bienEntity.DescLong,
+                    Ville = bienEntity.Ville,
+                    Rue = bienEntity.Rue,
+                    Numero = bienEntity.Numero,
+                    CodePostal = bienEntity.CodePostal,
+                    Photo = bienEntity.Photo,
+                    IsEnabled = bienEntity.IsEnabled,
+                    DisabledDate = bienEntity.DisabledDate,
+                };
+                bienModels.Add(bienModel);
+            }
+
+            return bienModels;
+        }
     }
 }

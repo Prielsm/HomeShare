@@ -1,0 +1,25 @@
+﻿@model HomeShare.Areas.Biens.Models.FicheViewModel
+@{
+    ViewBag.Title = "Fiche";
+}
+<!-- banner -->
+<div class="inside-banner">
+    <div class="container">
+        <span class="pull-right"><a href="~/Home/Index">Home</a> / Biens / Fiche d'un bien</span>
+        <h2>Fiche du bien : @Model.BienModel.Titre</h2>
+    </div>
+</div>
+<!-- banner -->
+Titre : @Model.BienModel.Titre
+
+@if (!HomeShare.Infra.SessionUtils.IsLogged)
+{
+    <a href="/Account/Login"><button>ECHANGER</button></a>
+}
+else
+{
+    <a href="/Biens/Home/Echanger"><button>ECHANGER</button></a>
+
+}
+
+

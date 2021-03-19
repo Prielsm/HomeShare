@@ -162,7 +162,6 @@ namespace HomeShare.Models
         }
 
         [Required]
-        [MaxLength(50)]
         public string Photo
         {
             get

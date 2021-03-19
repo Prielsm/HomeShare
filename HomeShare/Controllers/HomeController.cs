@@ -1,4 +1,5 @@
-﻿using System;
+﻿using HomeShare.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
@@ -11,8 +12,9 @@ namespace HomeShare.Controllers
         public ActionResult Index()
         {
             ViewBag.Index = "active";
+            HomeViewModel homeViewModel = new HomeViewModel();
 
-            return View();
+            return View(homeViewModel);
 
         }
 

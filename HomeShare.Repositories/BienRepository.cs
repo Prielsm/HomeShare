@@ -21,19 +21,27 @@ namespace HomeShare.Repositories
 
         public List<BienEntity> Get()
         {
-            throw new NotImplementedException();
+            string requete = @"SELECT * FROM BienEchange";
+            return base.Get(requete);
         }
 
         public BienEntity GetOne(int PK)
         {
-            throw new NotImplementedException();
+            string requete = @"SELECT * From BienEchange where IdBien = " + PK;
+            return base.GetOne(PK, requete);
+        }
+
+        public List<BienEntity> GetDerniersBiens()
+        {
+            string requete = @"SELECT * FROM Vue_CinqDernierBiens";
+            return base.Get(requete);
         }
 
         public bool Insert(BienEntity toInsert)
         {
             string requete = @"INSERT INTO [dbo].[BienEchange] ([Titre],[NombrePerson],[Pays],[IdMembre],[DescCourte],[DescLong],[Ville],[Rue],[Numero],[CodePostal],[Photo])
                                 VALUES
-                              (@Titre,@NombrePerson,@Pays,@Pays,@IdMembre,@DescCourte,@DescLong,@Ville,@Rue,@Numero,@CodePostal,@Photo)";
+                              (@Titre,@NombrePerson,@Pays,@IdMembre,@DescCourte,@DescLong,@Ville,@Rue,@Numero,@CodePostal,@Photo)";
             
 
             return base.Insert(toInsert, requete);
